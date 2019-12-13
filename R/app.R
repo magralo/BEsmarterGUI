@@ -1,5 +1,6 @@
 dep=c("rsconnect" ,"shiny","mlogit" ,"MASS" ,"AER" ,         
-      "mcmc","bayesm","MCMCpack",
+      "coda","quantreg","mcmc",
+      "bayesm","MCMCpack",
       "abind","bayesboot","bibtex" ,      
       "BMA","car","carData","cellranger" ,"clipr",        
       "coda","DT","Formula","ivbma",    
