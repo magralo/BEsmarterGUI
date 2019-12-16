@@ -30,8 +30,8 @@ image<- img(src="logo.png", height = 200, width = "90%") #Local variable
 
 ##### 1. Univariate Models: First NavBar#####
 file1m<- fileInput('file1', 'Choose File',
-                   accept=c('text/csv',
-                            'text/comma-separated-values,text/plain',
+                   accept=c('text/csv', 
+                            'text/comma-separated-values,text/plain', 
                             '.csv'))
 filech1m<- checkboxInput('header1', 'Header', TRUE)
 rb1m<- radioButtons('sep1', 'Separator',
@@ -43,8 +43,8 @@ rb1m<- radioButtons('sep1', 'Separator',
 ##### 2. Multivariate Models: Second NavBar#####
 
 file2m<- fileInput('file2', 'Choose File',
-                   accept=c('text/csv',
-                            'text/comma-separated-values,text/plain',
+                   accept=c('text/csv', 
+                            'text/comma-separated-values,text/plain', 
                             '.csv'))
 filech2m<- checkboxInput('header2', 'Header', TRUE)
 rb2m<- radioButtons('sep2', 'Separator',
@@ -57,8 +57,8 @@ rb2m<- radioButtons('sep2', 'Separator',
 
 ##### 3. Longitudinal Models: Forth NavBar#####
 file3m<- fileInput('file3', 'Choose File',
-                   accept=c('text/csv',
-                            'text/comma-separated-values,text/plain',
+                   accept=c('text/csv', 
+                            'text/comma-separated-values,text/plain', 
                             '.csv'))
 filech3m<- checkboxInput('header3', 'Header', TRUE)
 rb3m<- radioButtons('sep3', 'Separator',
@@ -70,8 +70,8 @@ rb3m<- radioButtons('sep3', 'Separator',
 
 ##### 4. Non-Parametric Models: Forth NavBar#####
 file4m<- fileInput('file4', 'Choose File',
-                   accept=c('text/csv',
-                            'text/comma-separated-values,text/plain',
+                   accept=c('text/csv', 
+                            'text/comma-separated-values,text/plain', 
                             '.csv'))
 filech4m<- checkboxInput('header4', 'Header', TRUE)
 rb4m<- radioButtons('sep4', 'Separator',
@@ -82,68 +82,68 @@ rb4m<- radioButtons('sep4', 'Separator',
 ###################################
 
 #####Univariate#################
-it1<- sliderInput("it",
-                  "MCMC iterations:",
+it1<- sliderInput("it", 
+                  "MCMC iterations:", 
                   value = 10000,
-                  min = 10000,
+                  min = 10000, 
                   max = 100000,
                   step = 10000)
-it2<- sliderInput("burnin",
-                  "Burn-in Size:",
+it2<- sliderInput("burnin", 
+                  "Burn-in Size:", 
                   value = 1000,
-                  min = 1000,
+                  min = 1000, 
                   max = 10000,
                   step = 1000)
 
-it3<- selectInput("keep", "Thinning parameter:",
+it3<- selectInput("keep", "Thinning parameter:", 
                   choices = c("1", "5", "10", "20", "50", "100"), selected = "1")
 
 #####Multivariate#################
-it1MV<- sliderInput("itMV",
-                  "MCMC Iterations:",
+it1MV<- sliderInput("itMV", 
+                  "MCMC Iterations:", 
                   value = 10000,
-                  min = 10000,
+                  min = 10000, 
                   max = 100000,
                   step = 10000)
-it2MV<- sliderInput("burninMV",
-                  "Burn-in Size:",
+it2MV<- sliderInput("burninMV", 
+                  "Burn-in Size:", 
                   value = 1000,
-                  min = 1000,
+                  min = 1000, 
                   max = 10000,
                   step = 1000)
 
-it3MV<- selectInput("keepMV", "Thinning parameter:",
+it3MV<- selectInput("keepMV", "Thinning parameter:", 
                   choices = c("1","5", "10", "20", "50", "100"), selected = "1")
 
 #####Hierarchical#################
-it1HM<- sliderInput("itHM",
-                    "MCMC Iterations:",
+it1HM<- sliderInput("itHM", 
+                    "MCMC Iterations:", 
                     value = 10000,
-                    min = 10000,
+                    min = 10000, 
                     max = 100000,
                     step = 10000)
-it2HM<- sliderInput("burninHM",
-                    "Burn-in Size:",
+it2HM<- sliderInput("burninHM", 
+                    "Burn-in Size:", 
                     value = 1000,
-                    min = 1000,
+                    min = 1000, 
                     max = 10000,
                     step = 1000)
 
-it3HM<- selectInput("keepHM", "Thinning parameter:",
+it3HM<- selectInput("keepHM", "Thinning parameter:", 
                     choices = c("1","5", "10", "20", "50", "100"), selected = "1")
 
 ######Nonparametric: Bootstrap########
-it1BB<- sliderInput("itBB",
-                  "MCMC Iterations:",
+it1BB<- sliderInput("itBB", 
+                  "MCMC Iterations:", 
                   value = 10000,
-                  min = 10000,
+                  min = 10000, 
                   max = 100000,
                   step = 5000)
 
-BBr2<- sliderInput("BBr2",
-                    "Resampling Size:",
+BBr2<- sliderInput("BBr2", 
+                    "Resampling Size:", 
                     value = 1000,
-                    min = 1000,
+                    min = 1000, 
                     max = 10000,
                     step = 1000)
 
@@ -152,24 +152,24 @@ HT<- helpText("Click the button (Go!) after importing the dataset and selecting 
 BE<- helpText("Warning: Be patient this may take several minutes!!!")
 
 ######BMA########
-itBMA<- sliderInput("itBMA",
-                    "MCMC Iterations:",
+itBMA<- sliderInput("itBMA", 
+                    "MCMC Iterations:", 
                     value = 10000,
-                    min = 10000,
+                    min = 10000, 
                     max = 100000,
                     step = 5000)
 
-it2BMA<- sliderInput("it2BMA",
-                    "Burn-in Sample:",
+it2BMA<- sliderInput("it2BMA", 
+                    "Burn-in Sample:", 
                     value = 1000,
-                    min = 1000,
+                    min = 1000, 
                     max = 10000,
                     step = 1000)
 
-itBMAMC3<- sliderInput("itBMAMC3",
-                     "MC3 Iterations:",
+itBMAMC3<- sliderInput("itBMAMC3", 
+                     "MC3 Iterations:", 
                      value = 10000,
-                     min = 10000,
+                     min = 10000, 
                      max = 100000,
                      step = 5000)
 
@@ -206,7 +206,7 @@ pplot42<- plotOutput("plot42", height = 1)
 ##### BMA GLM ####
 radioBMA=radioButtons("radioBMA", "Bayesian Model Average",
                       c("No selection"="NS",
-                        "Normal data"="NBMA",
+                        "Normal data"="NBMA", 
                         "Binomial data (Logit)"="LBMA",
                         "Real positive data (Gamma)"="GBMA",
                         "Count data (Poisson)"="PBMA")
@@ -215,6 +215,6 @@ radioBMA=radioButtons("radioBMA", "Bayesian Model Average",
 CONDBMA<- uiOutput("CONDBMA")
 
 base_help = 'See Table 3 in our paper (Help tab) for template files to upload. You can also see the dataSim folder at rstudio.cloud in particular the file: '
-
-
-
+            
+            
+            
