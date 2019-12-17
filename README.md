@@ -2,8 +2,8 @@
 
 ## Set up
 
-1. Clone this project
-2. Open the .Rproj con rstudio
+1. Clone this project.
+2. Open the BEsmarter.Rproj con rstudio.
 3. Once you are in the project run the script "prep.R". This should install all dependencies for the app. 
 4. You are all set, be smarter.
 
